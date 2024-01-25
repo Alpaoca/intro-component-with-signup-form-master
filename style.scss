@@ -1,0 +1,135 @@
+$white: hsl(0, 0%, 100%);
+$darkBlue: hsl(249, 10%, 26%);
+$grayishBlue: hsl(246, 25%, 77%);
+$red: hsl(0, 100%, 74%);
+$darkRed: hsl(358, 61%, 63%);
+$green: hsl(154, 59%, 51%);
+$darkGreen: hsl(154, 40%, 49%);
+$darkPurple: hsl(248, 32%, 49%);
+$desktop: 1440px;
+$mobile: 375px;
+$poppins: "Poppins";
+
+body {
+  font-family: $poppins, serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./images/bg-intro-desktop.png);
+  background-color: $red;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+h1 {
+  color: $white;
+}
+
+p {
+  font-weight: 400;
+}
+
+a {
+  color: $red;
+  text-decoration: none;
+}
+
+input {
+  font-family: $poppins, serif;
+  font-weight: 500;
+  color: black;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid $grayishBlue;
+  padding: 1em 2em;
+}
+
+.trial {
+  height: 40em;
+  width: 40em;
+
+  &__heading {
+    min-height: 640px;
+    min-width: 640px;
+    box-sizing: border-box;
+    padding: 10em 0em 10em 9em;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 3em;
+  }
+  &__body {
+    font-weight: 400;
+    color: $white;
+    font-size: 1em;
+  }
+
+  &__form {
+    min-height: 640px;
+    min-width: 640px;
+  }
+
+  &__banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    height: 4em;
+    background-color: $darkPurple;
+    border-radius: 10px;
+    box-shadow: 0px 8px $darkRed;
+    font-weight: 400;
+    font-size: 1em;
+    gap: 5px;
+  }
+  &__fillout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $white;
+    height: auto;
+    border-radius: 10px;
+    padding: 2em 3em;
+    box-sizing: border-box;
+    box-shadow: 0px 8px $darkRed;
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+    font-family: $poppins, serif;
+    font-weight: 500;
+    font-size: 1em;
+    color: $white;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px;
+    box-shadow: 0px 3px $darkGreen;
+    padding: 1em;
+    background-color: $green;
+  }
+  &__term {
+    margin-top: 1.5em;
+    font-weight: 400;
+    font-size: 0.8em;
+    color: $grayishBlue;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
