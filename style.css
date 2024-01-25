@@ -7,7 +7,6 @@ body {
   height: 100vh;
   background-image: url(./images/bg-intro-desktop.png);
   background-color: hsl(0, 100%, 74%);
-  margin: 0;
 }
 
 main {
@@ -38,6 +37,7 @@ input {
   border-radius: 5px;
   border: 1px solid hsl(246, 25%, 77%);
   padding: 1em 2em;
+  margin-top: 1em;
 }
 
 .trial {
@@ -77,15 +77,21 @@ input {
   gap: 5px;
 }
 .trial__fillout {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background-color: hsl(0, 0%, 100%);
   height: auto;
   border-radius: 10px;
   padding: 2em 3em;
   box-sizing: border-box;
   box-shadow: 0px 8px hsl(358, 61%, 63%);
+}
+.trial__invalid {
+  display: none;
+  justify-content: end;
+  margin: 0;
+  color: hsl(358, 61%, 63%);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.8em;
 }
 .trial__button {
   display: flex;
@@ -103,8 +109,11 @@ input {
   box-shadow: 0px 3px hsl(154, 40%, 49%);
   padding: 1em;
   background-color: hsl(154, 59%, 51%);
+  margin-top: 1em;
+  cursor: pointer;
 }
 .trial__term {
+  text-align: center;
   margin-top: 1.5em;
   font-weight: 400;
   font-size: 0.8em;

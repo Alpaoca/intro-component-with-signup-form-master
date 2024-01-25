@@ -19,7 +19,6 @@ body {
   height: 100vh;
   background-image: url(./images/bg-intro-desktop.png);
   background-color: $red;
-  margin: 0;
 }
 
 main {
@@ -50,6 +49,7 @@ input {
   border-radius: 5px;
   border: 1px solid $grayishBlue;
   padding: 1em 2em;
+  margin-top: 1em;
 }
 
 .trial {
@@ -91,9 +91,6 @@ input {
     gap: 5px;
   }
   &__fillout {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: $white;
     height: auto;
     border-radius: 10px;
@@ -101,6 +98,17 @@ input {
     box-sizing: border-box;
     box-shadow: 0px 8px $darkRed;
   }
+
+  &__invalid {
+    display: none;
+    justify-content: end;
+    margin: 0;
+    color: $darkRed;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 0.8em;
+  }
+
   &__button {
     display: flex;
     justify-content: center;
@@ -117,8 +125,11 @@ input {
     box-shadow: 0px 3px $darkGreen;
     padding: 1em;
     background-color: $green;
+    margin-top: 1em;
+    cursor:pointer;
   }
   &__term {
+    text-align: center;
     margin-top: 1.5em;
     font-weight: 400;
     font-size: 0.8em;
