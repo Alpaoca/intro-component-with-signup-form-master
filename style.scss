@@ -4,6 +4,7 @@ $grayishBlue: hsl(246, 25%, 77%);
 $red: hsl(0, 100%, 74%);
 $darkRed: hsl(358, 61%, 63%);
 $green: hsl(154, 59%, 51%);
+$lightGreen: hsl(154, 65%, 68%);
 $darkGreen: hsl(154, 40%, 49%);
 $darkPurple: hsl(248, 32%, 49%);
 $desktop: 1440px;
@@ -41,6 +42,7 @@ a {
 }
 
 input {
+  display: block;
   font-family: $poppins, serif;
   font-weight: 500;
   color: black;
@@ -126,7 +128,15 @@ input {
     padding: 1em;
     background-color: $green;
     margin-top: 1em;
-    cursor:pointer;
+    cursor: pointer;
+  }
+  &__button:hover {
+    background-color: $lightGreen;
+  }
+  &__button:active {
+    background-color: $darkGreen;
+    box-shadow: 0;
+    transform: translateY(2px);
   }
   &__term {
     text-align: center;
