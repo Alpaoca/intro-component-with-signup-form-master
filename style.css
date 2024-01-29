@@ -136,4 +136,48 @@ input {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+  }
+  main {
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: start;
+  }
+  .trial {
+    height: 15em;
+    width: 0;
+  }
+  .trial__heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100px;
+    min-width: 400px;
+    padding: 0 1em;
+    text-align: center;
+  }
+  .trial__title {
+    font-size: 2em;
+    margin: 0;
+  }
+  .trial__banner {
+    height: 6em;
+    box-sizing: border-box;
+  }
+  .trial__form {
+    min-height: 90px;
+    min-width: 360px;
+    box-sizing: border-box;
+  }
+  .trial__fillout {
+    padding: 1em;
+  }
 }/*# sourceMappingURL=style.css.map */
